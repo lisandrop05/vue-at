@@ -24,6 +24,8 @@ export function applyRange(range) {
 export function getRange() {
   const selection = window.getSelection()
   if (selection && selection.rangeCount > 0) {
+      console.log(selection);
+      console.log(selection.rangeCount);
     return selection.getRangeAt(0)
   }
 }
